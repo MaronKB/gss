@@ -1,0 +1,44 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header>
+        <div class="item-infobar flex">
+            <div>
+                <h2>{{localize "GSS.Connection"}}</h2>
+            </div>
+        </div>
+        <div class="header-fields">
+		<div class="flex">
+			<div class="img-container face">
+				<img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
+			</div>
+			<div class="item-textfield">
+                <label class="cons-label">{{localize "GSS.Name"}}</label>
+				<div><h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1></div>
+                <label class="cons-label">{{localize "GSS.Memo"}}</label>
+				<div><textarea name="data.memo">{{data.memo}}</textarea></div>
+			</div>
+		</div>
+            <div class="flex">
+                <div>
+                    <div class="cons">
+                        <label class="cons-label">{{localize "GSS.Contents"}}</label>
+                        <div><input type="text" name="data.to.contents" value="{{data.to.contents}}"/></div>
+                    </div>
+                    <div class="cons-int">
+                        <label class="cons-label">{{localize "GSS.Intensity"}}</label>
+                        <div><input type="text" name="data.to.value" value="{{data.to.value}}"/><i class="fas fa-level-up-alt"></i></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="cons">
+                        <label class="cons-label">{{localize "GSS.Contents"}}</label>
+                        <div><input type="text" name="data.by.contents" value="{{data.by.contents}}"/></div>
+                    </div>
+                    <div class="cons-int">
+                        <label class="cons-label">{{localize "GSS.Intensity"}}</label>
+                        <div><input type="text" name="data.by.value" value="{{data.by.value}}"/><i class="fas fa-level-down-alt"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</form>

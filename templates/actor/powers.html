@@ -1,0 +1,83 @@
+<div class="powers-list">
+	<div class="item flex items-container">
+	<div class="power-header"><h2>{{localize "GSS.Powers"}}</h2><a class="item-control item-create" title="Create item" data-type="power"><i class="fas fa-plus"></i>{{localize "GSS.Add"}}</a></div>
+	{{#each powers as |item id|}}
+    <div class="item power general" data-item-id="{{item._id}}">
+		<div class="item-header flex">
+			<div class="item-name">
+				<h4 class="power-title"><a class="rollable" data-roll-type="power">{{item.name}}</a></h4>
+			</div>
+			<div class="item-controls">
+				<a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+				<a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+			</div>
+		</div>
+		<div class="item-info flex">
+            <div class="item-for">
+                <h4 class="power-info">{{data.for}} {{localize "GSS.Powers"}}</h4>
+            </div>
+            <div class="item-cost">
+                <h4 class="power-info">{{localize "GSS.Cost"}} {{data.cost}}</h4>
+            </div>
+		</div>
+		<hr>
+		<div class="item-description"><p>{{data.description}}</p></div>
+	</div>
+	{{/each}}
+	</div>
+	<div class="item flex adwks items-container">
+	<div class="power-header"><h2>{{localize "GSS.Additional"}}</h2><a class="item-control item-create" title="Create item" data-type="additional"><i class="fas fa-plus"></i>{{localize "GSS.Add"}}</a></div>
+	{{#each additionals as |item id|}}
+	<div class="item power adwk" data-item-id="{{item._id}}">
+    <div class="addi">
+        <div class="item-header flex">
+            <div class="item-name flex">
+                <h4 class="power-title">
+                    <a class="rollable" data-roll-type="addi">{{data.addi.name}}</a>
+                </h4>
+            </div>
+            <div class="item-controls">
+                <a class="item-control item-edit" title="Edit Item">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <a class="item-control item-delete" title="Delete Item">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </div>
+        </div>
+		<div class="item-info flex">
+            <div class="item-for">
+                <h4 class="power-info">{{data.for}} {{localize "GSS.Additional"}}</h4>
+            </div>
+            <div class="item-cost">
+                <h4 class="power-info">{{localize "GSS.Cost"}} {{data.cost}}</h4>
+            </div>
+		</div>
+		<hr>
+        <div class="item-description">
+            <p>{{data.addi.description}}</p>
+        </div>
+    </div>
+    <div class="adwk-divider"></div>
+    <div class="weak">
+        <div class="item-header flex">
+            <div class="item-name flex">
+                <h4 class="power-title">
+                    <a class="rollable" data-roll-type="weak">{{data.weak.name}}</a>
+                </h4>
+            </div>
+        </div>
+		<div class="item-info flex">
+            <div class="item-for">
+                <h4 class="power-info">{{data.for}} {{localize "GSS.Weakness"}}</h4>
+            </div>
+		</div>
+		<hr>
+        <div class="item-description">
+            <p>{{data.weak.description}}</p>
+        </div>
+    </div>
+</div>
+	{{/each}}
+	</div>
+ </div>

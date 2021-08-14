@@ -1,0 +1,85 @@
+<form class="{{cssClass}} {{actor.type}} flex" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+	<header>
+	<div class="header-bar" style="background-image: url('{{data.raceimg}}');">
+		<h1 class="trueform strong"><input name="data.trueform" type="text" value="{{data.trueform}}" placeholder="{{localize "GSS.Trueform"}}"/></h1>
+	</div>
+	<div class="sheet-header flex">
+		<div class="img-container">
+			<img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="300" width="300" />
+		</div>
+        <div>
+			<div class="header-fields flex">
+				<div class="charname flex">
+					<h1 class="name-header">{{localize "GSS.Name"}}</h1><h1><input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "GSS.Name"}}"/></h1>
+				</div>
+				<div class="information">
+					<div class="age flex"><h3>{{localize "GSS.Age"}}</h3><input name="data.age" type="text" value="{{data.age}}" placeholder="{{localize "GSS.Age"}}"/></div>
+					<div class="gender flex"><h3>{{localize "GSS.Gender"}}</h3><input name="data.gender" type="text" value="{{data.gender}}" placeholder="{{localize "GSS.Gender"}}"/></div>
+				</div>
+			</div>
+			<div class="resource flex">
+				<div class="cost">
+					<div class="wonder flex">
+						<h3 class="wonderhead">{{localize "GSS.Wonder"}}</h3>
+						<input type="number" name="data.resources.wonder.value" value="{{data.resources.wonder.value}}"/>
+					</div>
+					<div class="feelings flex">
+						<h3 class="feelinghead">{{localize "GSS.Feelings"}}</h3>
+						<input type="number" name="data.resources.feelings.value" value="{{data.resources.feelings.value}}"/>
+					</div>
+				</div>
+				<div class="attributes flex">
+					<div class="henge">
+						<h3 class="hengehead">{{localize "GSS.Henge"}}</h3>
+						<input type="number" name="data.attributes.henge.value" value="{{data.attributes.henge.value}}"/>
+					</div>
+					<div class="animal">
+						<h3 class="animalhead">{{localize "GSS.Animal"}}</h3>
+						<input type="number" name="data.attributes.animal.value" value="{{data.attributes.animal.value}}"/>
+					</div>
+					<div class="adult">
+						<h3 class="adulthead">{{localize "GSS.Adult"}}</h3>
+						<input type="number" name="data.attributes.adult.value" value="{{data.attributes.adult.value}}"/>
+					</div>
+					<div class="child">
+						<h3 class="childhead">{{localize "GSS.Child"}}</h3>
+						<input type="number" name="data.attributes.child.value" value="{{data.attributes.child.value}}"/>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	</head>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    {{!-- Default tab is specified in actor-sheet.mjs --}}
+    <a class="item" data-tab="description">{{localize "GSS.Biography"}}</a>
+    <a class="item" data-tab="powers">{{localize "GSS.Powers"}}</a>
+    <a class="item" data-tab="connections">{{localize "GSS.Connections"}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Biography Tab --}}
+    <div class="tab biography" data-group="primary" data-tab="description">
+      {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to the rollData property. --}}
+      {{editor content=data.biography target="data.biography" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+	
+    {{!-- Powers Tab --}}
+    <div class="tab powers" data-group="primary" data-tab="powers">
+      {{> "systems/gss/templates/actor/powers.html"}}
+    </div>
+
+    {{!-- Connections Tab --}}
+    <div class="tab connections flex" data-group="primary" data-tab="connections">
+	  {{> "systems/gss/templates/actor/connections.html"}}
+    </div>
+
+  </section>
+</form>
+

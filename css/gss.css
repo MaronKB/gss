@@ -1,0 +1,639 @@
+@font-face {
+    font-family: 'Katuri';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+font-family: 'UhBeeSeulvely';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+    font-family: 'ROEHOE-CHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mini-wakuwaku';
+    src:url('mini-wakuwaku.ttf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.gss {
+	margin: 0px;
+}
+.gss,
+div.poweruse-header,
+div.poweruse-label {
+	font-family: 'Katuri', 'mini-wakuwaku';
+}
+.gss .strong {
+	font-family: 'ROEHOE-CHAN', 'mini-wakuwaku';
+	font-weight: 600;
+}
+.gss h1, .gss h2, .gss h3, .gss h4 {
+	text-align: center;
+	margin: 0;
+	border: none;
+}
+.gss p {
+	margin: 0;
+}
+.gss div {
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	margin:5px;
+	align-items:center;
+	/* background: #aaaaaa44; */
+}
+.gss input {
+	padding: 0px 5px;
+}
+.gss input::-webkit-input-placeholder {
+	color: white!important;
+}
+.gss input::-moz-placeholder {
+	color: white!important;
+}
+.gss input:-ms-input-placeholder {
+	color: white!important;
+}
+.gss input:-moz-placeholder {
+	color: white!important;
+}
+.gss input::placeholder {
+	color: white!important;
+}
+.gss .img-container {
+	border-radius: 50%;
+	height: 180px;
+	min-width: 180px;
+    overflow: hidden;
+}
+/*
+.gss.actor .sheet-header h3{
+	text-align: left;
+}
+*/
+.gss .sheet-header input {
+	text-align: center;
+}
+.gss textarea {
+	border: none;
+	resize: none;
+	margin: 5px;
+    width: calc(100% - 10px);
+}
+.flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.gss .window-content {
+	padding: 0;
+}
+.gss .header-bar {
+	margin: 0;
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+}
+.gss .header-fields {
+    align-items: flex-end;
+}
+.gss.character .trueform {
+	background: black;
+	height: 36px;
+}
+.gss h1.trueform {
+	height: 60px;
+}
+.gss h1.trueform input {
+	color: white!important;
+	text-align: center;
+	font-size: 64px;
+    height: initial;
+	width: 400px;
+	background: none;
+    text-shadow: 0px 0px 4px black;
+}
+/*
+.gss.actor .sheet-header {
+    min-height: 180px;
+    max-height: 180px;
+}
+*/
+.gss input,
+.gss img.profile-img {
+	border:none;
+}
+.gss.actor .sheet-header img.profile-img {
+	height: 100%;
+}
+.gss .header-fields h1 {
+	text-align: center;
+	font-size: 24px;
+	margin: 5px;
+}
+.gss div.charname {
+	height: 100%;
+}
+.gss .charname input {
+	line-height: 32px;
+	height: 32px;
+}
+.gss .charname .name-header {
+	width: 10px;
+	height: 32px;
+	position: relative;
+	font-size: 36px;
+	top: -25px;
+	white-space: nowrap;
+	opacity: 0.7;
+}
+.gss .information,
+.gss .cost,
+.gss .attributes,
+.gss .add-container {
+	text-align: center;
+	margin: 0;
+}
+.gss .information h3 {
+	margin: 5px;
+}
+.gss .information .playername {
+	width: 50%;
+}
+.gss .information .age,
+.gss .information .gender {
+}
+.gss .information input {
+	width: 60%;
+}
+.gss div.cost {
+	width: 30%;
+	line-height: 32px;
+}
+.gss div.attributes {
+	width: 70%;
+	text-align: center;
+}
+.gss .resource {
+    justify-content: space-between;
+}
+.gss .resource .cost h3 {
+	width: 50%;
+}
+.gss .resource .cost input {
+	font-size: 24px;
+	height: 100%;
+	text-align:center;
+}
+span.plus {
+	font-size: 32px;
+	font-weight: 600;
+}
+.gss .attributes input {
+	font-size: 32px;
+	height: 49px;
+	width: 100%;
+	text-align:center;
+}
+
+.powers-list div{
+	overflow: hidden;
+}
+.gss .item-controls {
+	text-align: right;
+}
+.gss .items-container {
+	flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.gss .power {
+	background: #77777744;
+    width: calc(33% - 9px);
+}
+.gss .item-description {
+	height: 120px;
+	padding: 5px;
+}
+.gss .power-header {
+	width: 100%;
+	background-color: #aaaaaa77;
+	margin: 5px;
+	text-align: right;
+}
+.gss .power-header h2 {
+	padding: 5px;
+}
+.gss .power-header .item-control {
+    height: 0px;
+    float: right;
+    position: relative;
+    right: 4px;
+    bottom: 22px;
+}
+.gss h4.power-title {
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.gss .item-header {
+	min-height: 29px;
+	background-color: #ffffff77;
+}
+.gss .item-name {
+	margin-right: auto;
+    margin-left: auto;
+}
+.gss .item-image img {
+	border: none;
+}
+
+.gss .power.adwk {
+	background: transparent;
+}
+.gss .addi,
+.gss .weak {
+	background: #77777744;
+	margin: 0;
+}
+.gss .power,
+.gss .item-header {
+	border-radius: 10px;
+}
+.gss .power hr {
+	border-image: linear-gradient(to right, transparent 2%, #777777, transparent 98%);
+    border-image-slice: 1;
+}
+.gss .addi {
+	border-radius: 10px 10px 0px 0px;
+}
+.gss .weak {
+	border-radius: 0px 0px 10px 10px;
+}
+.gss .adwk-divider {
+	background: linear-gradient(to right, #77777744 10%, transparent 10% 90%, #77777744 90%);
+	margin: 0;
+	padding: 5px;
+}
+.gss .item-info {
+	height: 20px;
+}
+
+.gss textarea[name="data.description"] {
+	height: 250px;
+}
+.gss textarea[name="data.addi.description"],
+.gss textarea[name="data.weak.description"] {
+	height: 140px;
+}
+
+.sheet-body {
+	height: 58%;
+}
+
+.gss .tab.active,
+.gss .editor {
+	min-height: 200px;
+	height: 100%;
+}
+.tox.tox-tinymce {
+	height: auto!important;
+	back
+}
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+	width: 100%;
+}
+.sheet .editor-content {
+	height: 95%;
+}
+.tox .tox-editor-container,
+.tox .tox-sidebar-wrap,
+.tox .tox-edit-area,
+.tox.tox-tinymce .tox-edit-area__iframe {
+	min-height: 320px;
+	height: 100%!important;
+	width: 100%;
+}
+.mce-content-body {
+	background-color: #ffffff22;
+}
+div.poweruse-header,
+div.poweruse-label {
+	text-align: center;
+	align-items: flex-start;
+}
+.poweruse-header {
+	height: 32px;
+}
+.poweruse-label {
+	background-color: #77777722;
+    height: 20px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.poweruse-name {
+	line-height: 32px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.costs {
+	width: 30px;
+	position: relative;
+	top: -8px;
+}
+.poweruse-cost {
+	font-size: 18px;
+    position: relative;
+    top: -16px;
+}
+.costhead {
+	font-size: 10px;
+}
+
+.connections-list {
+	width: 430px;
+	text-align: center;
+	table-layout: fixed;
+	background: none;
+	border: none;
+}
+.connections-list tr:nth-child(even) {
+	background: none;
+}
+.con-item input {
+	margin: 0;
+	padding: 0;
+	height: 18px;
+	font-size: 14px;
+}
+.con-arrow {
+	width: 40px;
+	padding: 0px;
+}
+.con-arrow i {
+    font-size: 20px;
+}
+.isthread {
+	width: 60px;
+}
+.con-item.con-name {
+	font-size: 16px;
+}
+
+.cons-label {
+	text-align: center;
+}
+.gss table .connections-divider {
+	background: none;
+}
+.gss table .connections-divider td {
+	padding: 1px;
+	background: linear-gradient(to right, transparent, #777777, transparent);
+}
+
+progress.convalue {
+	box-sizing: border-box;
+	width: 100%;
+	background: linear-gradient(to right, #77777722 20%, #aaaaaa22 20% 40%, #77777722 40% 60%, #aaaaaa22 60% 80%, #77777722 80%);
+	color: #0000ff44;
+	border-radius: 7px;
+}
+progress.convalue::-webkit-progress-bar {
+	box-sizing: border-box;
+	width: 100%;
+	background: linear-gradient(to right, #77777722 20%, #aaaaaa22 20% 40%, #77777722 40% 60%, #aaaaaa22 60% 80%, #77777722 80%);
+	border-radius: 7px;
+}
+progress.convalue::-webkit-progress-value {
+	background-color: #0000ff44;
+	border-radius: 7px;
+}
+progress.convalue::-moz-progress-bar {
+	box-sizing: border-box;
+	width: 100%;
+	background: linear-gradient(to right, #77777722 20%, #aaaaaa22 20% 40%, #77777722 40% 60%, #aaaaaa22 60% 80%, #77777722 80%);
+	color: #0000ff44;
+	border-radius: 7px;
+}
+
+.con-sidebar {
+	width: 32%;
+    position: absolute;
+    right: 18px;
+    top: 320px;
+	justify-content: flex-end;
+}
+.con-sidebar .wonders,
+.con-sidebar .feeling,
+.con-sidebar .dreams {
+	width: 32%;
+}
+.con-sidebar label {
+	width: 100%;
+}
+.con-sidebar h2,
+.con-sidebar input {
+	text-align: center;
+	font-size: 32px;
+	margin: 2px;
+	line-height: 32px;
+}
+.con-sidebar h4.now {
+	width: 100%;
+	text-align: center;
+}
+.con-sidebar .add-container {
+	justify-content: center;
+}
+.con-sidebar .add-container h2 {
+	font-size: 24px;
+}
+.con-sidebar .add-container * {
+	line-height: 20px;
+}
+.con-sidebar .dreams input {
+	height: 58px;
+	font-size: 36px;
+}
+.emo-list {
+	flex-wrap: wrap;
+}
+.emo-list .emo {
+	width: 28%;
+	font-size: 14px;
+	text-align: center;
+	background: #77777722;
+}
+.emo-list .emo.emo-head {
+	width: 62%;
+}
+.emo-list .emo .fa-info-circle {
+	width: 0px;
+	height: 0px;
+	font-size: 10px;
+	float: right;
+	position: relative;
+    bottom: 5px;
+    right: 5px;
+}
+.needs {
+	justify-content: center;
+}
+.gss div.need-left,
+.gss div.need-right {
+	width: 50px;
+	margin: 0px 5px;
+}
+.gss div.need-middle {
+	width: 10px;
+	margin: 0px 5px;
+}
+.need-left {
+	text-align: right;
+}
+.need-right {
+	text-align: left;
+}
+
+.gss .dialog-content {
+	overflow: hidden;
+}
+.dreamer {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.dreamline {
+	background-color: #ffffff77;
+	border-radius: 10px;
+    overflow: hidden;
+	width: 100px;
+	padding: 5px;
+}
+.dreamline img {
+	border: none;
+	border-radius: 10px;
+}
+.dreamline h3 {
+	font-size: 14px;
+    height: 0px;
+    position: relative;
+    top: -16px;
+	overflow: visible;
+    text-shadow: 0px 0px 4px #000;
+    color: white;
+}
+.dreamline button {
+	height: 88px;
+	padding: 0px;
+	background: none;
+	border: none;
+	line-height: 0px;
+}
+.dreamline button i {
+    height: 0px;
+    width: 0px;
+    font-size: 90px;
+	font-weight: 600;
+    opacity: 0.3;
+    position: relative;
+    right: 38px;
+    top: -88px;
+    color: white;
+    text-shadow: 0px 0px 10px #00000077;
+}
+.dreamline button:hover {
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+.dreamline button:hover img {
+	opacity: 0.3;
+}
+.dreamline button:hover i {
+	opacity: 0.7;
+}
+
+.gss .disabled {
+	display: none;
+}
+
+.gss.item .connection-container {
+	align-items: flex-start;
+}
+.gss.item .connection-side {
+	width: calc(50% - 10px);
+}
+.gss.item .header-fields {
+	flex-wrap: nowrap;
+}
+.gss.item .header-fields textarea {
+	height: 65px;
+}
+.gss.item .item-infobar {
+	background-color: black;
+	color: white!important;
+	justify-content: center;
+}
+.gss.item .item-infobar input {
+	color: white!important;
+}
+.gss.item .img-container {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+}
+.gss.item .img-container img {
+    width: 100%;
+    height: 100%;
+}
+.gss.item .item-textfield {
+    width: 60%;
+}
+.gss.item .itemname {
+	width: 70%;
+}
+.gss.item .costname {
+	width: 30%;
+}
+.gss.item input {
+	text-align: center;
+}
+.gss.item .adwk-names input,
+.gss.item .connectionname,
+.gss.item .connectionname input,
+.gss.item .connectionname h3 {
+	height: 36px;
+    line-height: 36px;
+	text-align: center;
+}
+.gss.item .cons {
+	justify-content: space-between
+}
+.gss.item .img-container.face {
+    height: 180px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gss.item .connection-center {
+	position: absolute;
+	top: 77px;
+}
+.gss.item .cons-label {
+	position: relative;
+	top: 15px;
+}
+.gss.item .cons-int input,
+.gss.item .cons-int i {
+	width: 50%;
+	height: 60px;
+	font-size: 48px;
+    text-align: center;
+}

@@ -1,0 +1,91 @@
+{
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "base": {
+		"trueform": "",
+		"age": "",
+		"gender": "",
+        "biography": ""
+      }
+    },
+    "character": {
+      "templates": ["base"],
+	  "player": "",
+	  "raceimg": "",
+	  "resources": {
+		"wonder": {
+		  "value": 1,
+		  "add": 0
+		},
+		"feelings": {
+		  "value": 1,
+		  "add": 0
+		},
+		"dream": {
+		  "value": 0
+		}
+	  },
+      "attributes": {
+        "henge": {
+          "value": 0
+        },
+        "animal": {
+          "value": 0
+        },
+        "adult": {
+          "value": 0
+        },
+        "child": {
+          "value": 0
+        }
+      },
+	  "town": {
+		"contents": "",
+		"value": 0,
+		"by": 0
+	  }
+    },
+    "npc": {
+      "templates": ["base"],
+      "cr": 0
+    }
+  },
+  "Item": {
+    "types": ["power", "additionals", "connection"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "power": {
+      "templates": ["base"],
+	  "for": "",
+	  "cost": 0
+    },
+    "additionals": {
+	  "for": "",
+	  "cost": 0,
+	  "addi": {
+		"name": "",
+		"description" : ""
+	  },
+	  "weak": {
+	    "name": "",
+	    "description" : ""
+	  }
+    },
+	"connection": {
+	  "to": {
+		"contents": "",
+		"value": 1
+	  },
+	  "by": {
+		"contents": "",
+		"value": 1
+	  },
+	  "memo": "",
+	  "isthread": false
+	}
+  }
+}

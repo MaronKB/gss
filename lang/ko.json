@@ -1,0 +1,59 @@
+{
+"GSS.Name": "이름",
+"GSS.Trueform": "정체",
+"GSS.Player": "플레이어",
+"GSS.Age": "나이",
+"GSS.Gender": "성별",
+
+"GSS.Wonder": "신비",
+"GSS.Feelings": "마음",
+"GSS.Dream": "꿈",
+
+"GSS.Henge": "요괴",
+"GSS.Animal": "동물",
+"GSS.Adult": "어른",
+"GSS.Child": "아이",
+
+"GSS.Description": "설명",
+"GSS.Biography": "소개",
+"GSS.Memo": "메모",
+"GSS.Givedream": "꿈 주기",
+
+"GSS.Connection": "인연",
+"GSS.Connections": "인연",
+
+"GSS.Power": "특기",
+"GSS.Powers": "특기",
+"GSS.Additional": "추가 특기",
+"GSS.Weakness": "약점",
+"GSS.Addiweaks": "추가 특기 & 약점",
+"GSS.Cost": "비용",
+
+"GSS.You": "당신",
+"GSS.Opponent": "상대",
+"GSS.Contents": "내용",
+"GSS.Intensity": "정도",
+"GSS.Add": "추가",
+"GSS.Town": "마을",
+
+"GSS.New": "새",
+"GSS.To": "정도",
+
+"GSS.Emotion": "감정",
+"GSS.Like": "호의",
+"GSS.Affection": "애정",
+"GSS.Protection": "보호",
+"GSS.Trust": "신뢰",
+"GSS.Family": "가족",
+"GSS.Admiration": "동경",
+"GSS.Rivalry": "대항",
+"GSS.Respect": "존경",
+"GSS.Love": "사랑",
+"GSS.Acceptance": "수용",
+
+"GSS.LikeDescription": "정도 2까지만 가능",
+"GSS.LoveDescription": "정도 2이상부터 가능",
+"GSS.AcceptanceDescription": "마을, 신 전용",
+
+"GSS.Dreamcatcher": "드림캐처 시스템"
+}

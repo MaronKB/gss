@@ -1,0 +1,65 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header>
+        <div class="item-infobar flex">
+            <div>
+                <h2><input name="data.for" type="text" value="{{data.for}}" placeholder="{{localize "GSS.Trueform"}}"/></h2>
+            </div>
+            <div>
+                <h2>{{localize "GSS.Addiweaks"}}</h2>
+            </div>
+        </div>
+        <div class="sheet-header flex">
+            <div class="img-container">
+                <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
+            </div>
+            <div>
+                <div class="header-fields flex">
+                    <div class="itemname">
+                        <h1 class="item-title">{{localize "GSS.Name"}}</h1>
+                        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{localize "GSS.Name"}}"/></h1>
+                    </div>
+                    <div class="costname">
+                        <h1 class="item-title">{{localize "GSS.Cost"}}</h1>
+                        <h1><input name="data.cost" type="text" value="{{data.cost}}" placeholder="{{localize "GSS.Cost"}}"/></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="additional">{{localize "GSS.Additional"}}</a>
+    <a class="item" data-tab="weakness">{{localize "GSS.Weakness"}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Additional Tab --}}
+    <div class="tab" data-group="primary" data-tab="additional">
+		<div class="addis">
+		<div class="adwk-names">
+			<h2 class="addiname">{{localize "GSS.Additional"}} {{localize "GSS.Name"}}</h2><h1><input name="data.addi.name" type="text" value="{{data.addi.name}}" placeholder="{{localize GSS.Additional}}"/></h1>
+		</div>
+		<div>
+			<h2 class="addiname">{{localize "GSS.Description"}}</h2>
+			<textarea name="data.addi.description">{{data.addi.description}}</textarea>
+		</div>
+		</div>
+	</div>
+
+    {{!-- Weakness Tab --}}
+    <div class="tab" data-group="primary" data-tab="weakness">
+		<div class="weaks">
+		<div class="adwk-names">
+			<h2 class="addiname">{{localize "GSS.Weakness"}} {{localize "GSS.Name"}}</h2><h1><input name="data.weak.name" type="text" value="{{data.weak.name}}" placeholder="{{localize GSS.Weakness}}"/></h1>
+		</div>
+		<div>
+			<h2 class="addiname">{{localize "GSS.Description"}}</h2>
+			<textarea name="data.weak.description">{{data.weak.description}}</textarea>
+		</div>
+		</div>
+	</div>
+  </section>
+
+</form>

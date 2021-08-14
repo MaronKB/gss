@@ -1,0 +1,22 @@
+{
+  "GSS.AbilityStr": "Strength",
+  "GSS.AbilityCon": "Constitution",
+  "GSS.AbilityDex": "Dexterity",
+  "GSS.AbilityInt": "Intelligence",
+  "GSS.AbilityWis": "Wisdom",
+  "GSS.AbilityCha": "Charisma",
+
+  "GSS.AbilityStrAbbr": "str",
+  "GSS.AbilityConAbbr": "con",
+  "GSS.AbilityDexAbbr": "dex",
+  "GSS.AbilityIntAbbr": "int",
+  "GSS.AbilityWisAbbr": "wis",
+  "GSS.AbilityChaAbbr": "cha",
+
+  "GSS.EffectCreate": "Create Effect",
+  "GSS.EffectToggle": "Toggle Effect",
+  "GSS.EffectEdit": "Edit Effect",
+  "GSS.EffectDelete": "Delete Effect",
+
+  "GSS.Add": "Add"
+}

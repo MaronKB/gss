@@ -1,0 +1,39 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header>
+        <div class="item-infobar flex">
+            <div>
+                <h2><input name="data.for" type="text" value="{{data.for}}" placeholder="{{localize "GSS.Trueform"}}"/></h2>
+            </div>
+            <div>
+                <h2>{{localize "GSS.Power"}}</h2>
+            </div>
+        </div>
+        <div class="sheet-header flex">
+            <div class="img-container">
+                <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
+            </div>
+            <div>
+                <div class="header-fields flex">
+                    <div class="itemname">
+                        <h1 class="item-title">{{localize "GSS.Name"}}</h1>
+                        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{localize "GSS.Name"}}"/></h1>
+                    </div>
+                    <div class="costname">
+                        <h1 class="item-title">{{localize "GSS.Cost"}}</h1>
+                        <h1><input name="data.cost" type="text" value="{{data.cost}}" placeholder="{localize "GSS.Cost"}}"/></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {{!-- Sheet Tab Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <a class="item" data-tab="description">{{localize "GSS.Description"}}</a>
+        </nav>
+        {{!-- Sheet Body --}}
+        <section class="sheet-body">
+            {{!-- Description Tab --}}
+            <div class="tab" data-group="primary" data-tab="description">
+                <textarea name="data.description" value="{{data.description}}">{{data.description}}</textarea>
+            </div>
+        </section>
+    </form>

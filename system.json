@@ -27,7 +27,7 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/MaronKB/gss",
-  "manifest": "https://raw.githubusercontent.com/MaronKB/gss/main/module.json",
+  "manifest": "https://raw.githubusercontent.com/MaronKB/gss/main/system.json",
   "download": "https://github.com/MaronKB/gss/archive/main.zip",
   "license": "LICENSE.txt"
 }

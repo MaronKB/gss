@@ -26,8 +26,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/MaronKB/gss",
+  "manifest": "https://raw.githubusercontent.com/MaronKB/gss/main/module.json",
+  "download": "https://github.com/MaronKB/gss/archive/main.zip",
   "license": "LICENSE.txt"
 }

@@ -76,7 +76,7 @@
 				<h2>{{data.resources.feelings.add}}</h2>
 			</div>
 		</div>
-		<div class="dreams">
+		<div class="dreams" {{#unless data.visabledream}} style="display:none;" {{/unless}}>
 			<h4 class="now">{{localize "GSS.Dream"}}</h4>
 			<input type="number" name="data.resources.dream.value" value="{{data.resources.dream.value}}"/></div>
 		</div>
@@ -94,5 +94,13 @@
 			<div class="emo" title="{{localize "GSS.LoveDescription"}}">{{localize "GSS.Love"}}<i class="fas fa-info-circle"></i></div>
 			<div class="emo" title="{{localize "GSS.AcceptanceDescription"}}">{{localize "GSS.Acceptance"}}<i class="fas fa-info-circle"></i></div>
 		</div>
+		<div class="con-options">
+			<div class="con-option">
+				<label><input type="checkbox" name="data.isdreamed" {{#if data.isdreamed}} checked {{/if}}>{{localize "GSS.CharaIsDreamed"}}</label></li>
+			</div>
+			<div class="con-option">
+				<label><input type="checkbox" name="data.visabledream" {{#if data.visabledream}} checked {{/if}}>{{localize "GSS.DreamIsVisable"}}</label>
+			</ul>
+		<div>
     </div>
 </div>

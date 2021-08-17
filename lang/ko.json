@@ -56,5 +56,10 @@
 "GSS.LoveDescription": "정도 2이상부터 가능",
 "GSS.AcceptanceDescription": "마을, 신 전용",
 
-"GSS.Dreamcatcher": "드림캐처 시스템"
+"GSS.Dreamcatcher": "드림캐처 시스템",
+"GSS.True": "켜기",
+"GSS.False": "끄기",
+
+"GSS.CharaIsDreamed": "캐릭터를 드림캐처에 표시",
+"GSS.DreamIsVisable": "시트에 현재 꿈을 표시"
 }

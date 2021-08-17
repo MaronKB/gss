@@ -6,13 +6,16 @@
 		"trueform": "",
 		"age": "",
 		"gender": "",
+		"raceimg": "",
+		"deletelock": false,
         "biography": ""
       }
     },
     "character": {
       "templates": ["base"],
 	  "player": "",
-	  "raceimg": "",
+	  "isdreamed": true,
+	  "visabledream": true,
 	  "resources": {
 		"wonder": {
 		  "value": 1,
@@ -47,8 +50,7 @@
 	  }
     },
     "npc": {
-      "templates": ["base"],
-      "cr": 0
+      "templates": ["base"]
     }
   },
   "Item": {

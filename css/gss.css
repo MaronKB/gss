@@ -73,6 +73,11 @@ div.poweruse-label {
 	min-width: 180px;
     overflow: hidden;
 }
+.gss .img-container.npc {
+	height: 90px;
+	min-width: 90px;
+	width: 90px;
+}
 /*
 .gss.actor .sheet-header h3{
 	text-align: left;
@@ -332,6 +337,9 @@ div.poweruse-label {
 .poweruse-header {
 	height: 32px;
 }
+.poweruse-header h2 {
+    border: none;
+}
 .poweruse-label {
 	background-color: #77777722;
     height: 20px;
@@ -352,9 +360,11 @@ div.poweruse-label {
 	font-size: 18px;
     position: relative;
     top: -16px;
+    line-height: 30px;
 }
 .costhead {
 	font-size: 10px;
+	line-height: 30px;
 }
 
 .connections-list {

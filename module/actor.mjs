@@ -40,7 +40,7 @@ export class GssActor extends Actor {
 	
 	data.resources.wonder.add = parseInt(tos) + parseInt(data.town.value);
 	data.resources.feelings.add = parseInt(bys) + parseInt(data.town.by);
-	
+		
 	if (data.trueform.toLowerCase() == "fox" || data.trueform == "狐" || data.trueform == "きつね" || data.trueform == "キツネ" || data.trueform == "여우") {
 		data.raceimg = "systems/gss/templates/img/fox.png";
 	}

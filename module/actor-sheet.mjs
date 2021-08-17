@@ -121,7 +121,6 @@ export class GssActorSheet extends ActorSheet {
     event.preventDefault();
     const header = event.currentTarget;
     const type = header.dataset.type;
-	console.log(type);
     const data = duplicate(header.dataset);
     const name = game.i18n.localize('GSS.New')+ ' ' + game.i18n.localize(`GSS.${type.capitalize()}`);
     const itemData = {

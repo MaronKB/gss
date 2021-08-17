@@ -437,7 +437,7 @@ progress.convalue::-moz-progress-bar {
 	width: 32%;
     position: absolute;
     right: 18px;
-    top: 320px;
+    top: 330px;
 	justify-content: flex-end;
 }
 .con-sidebar .wonders,
@@ -493,6 +493,21 @@ progress.convalue::-moz-progress-bar {
     bottom: 5px;
     right: 5px;
 }
+.con-options .con-option {
+	font-size: 14px;
+	text-align: center;
+	background: #77777722;
+	height: 20px;
+}
+.con-options .con-option label {
+	text-align: center;
+	line-height: 20px;
+}
+.con-options .con-option input[type="checkbox"] {
+	height: 14px;
+	float: left;
+}
+
 .needs {
 	justify-content: center;
 }
@@ -516,14 +531,14 @@ progress.convalue::-moz-progress-bar {
 	overflow: hidden;
 }
 .dreamer {
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: flex-start;
 }
 .dreamline {
 	background-color: #ffffff77;
 	border-radius: 10px;
     overflow: hidden;
-	width: 100px;
+	width: calc(20% - 10px);
 	padding: 5px;
 }
 .dreamline img {

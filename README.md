@@ -27,5 +27,5 @@ Foundry VTTのセットアップスクリーンでシステムタップのイン
 https://raw.githubusercontent.com/MaronKB/gss/main/system.json
 
 ## Credit
-- Bouquet Dialogue of [Stella Knights of Silver Sword System][https://github.com/ksx0330/FVTT-StellaKnights-System]
-- Animal images by [JL G][https://pixabay.com/users/ractapopulous-24766/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2481872] from [Pixabay][https://pixabay.com/]
+- Bouquet Dialogue of [Stella Knights of Silver Sword System](https://github.com/ksx0330/FVTT-StellaKnights-System)
+- Animal images by [JL G](https://pixabay.com/users/ractapopulous-24766/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2481872) from [Pixabay](https://pixabay.com/)

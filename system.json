@@ -2,7 +2,7 @@
   "name": "gss",
   "title": "Golden Sky Stories",
   "description": "夕焼け小焼け / Golden Sky Stories / 저녁노을 어스름",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "minimumCoreVersion": "0.8.0",
   "compatibleCoreVersion": "0.8.8",
   "author": "MRKB",
@@ -20,6 +20,11 @@
       "lang": "ko",
       "name": "Korean",
       "path": "lang/ko.json"
+    },
+    {
+      "lang": "ja",
+      "name": "Japanese",
+      "path": "lang/ja.json"
     }
   ],
   "gridDistance": 5,

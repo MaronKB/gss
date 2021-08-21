@@ -3,6 +3,7 @@ import { GssItem } from "./item.mjs";
 import { GssActorSheet } from "./actor-sheet.mjs";
 import { GssItemSheet } from "./item-sheet.mjs";
 import { DreamCatcher } from "./dreamcatcher.mjs";
+import SysSettings from "./settings.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -27,6 +28,8 @@ Hooks.once('init', async function() {
   Actors.registerSheet("gss", GssActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("gss", GssItemSheet, { makeDefault: true });
+  SysSettings.register();
+  CONFIG.GSS.hide = SysSettings.get('hide-dreams-oncharactersheet');
   
   return preloadHandlebarsTemplates();
 });
@@ -75,7 +78,7 @@ Hooks.on("getSceneControlButtons", function(controls) {
     controls[0].tools.push({
         name: "dreams",
         title: game.i18n.localize('GSS.Givedream'),
-        icon: "fas fa-smile",
+        icon: "fas fa-hand-holding-heart",
         visible: true,
         onClick: () => dreamDialog(),
         button: true

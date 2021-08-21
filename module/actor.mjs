@@ -59,6 +59,7 @@ export class GssActor extends Actor {
 	else if (data.trueform.toLowerCase() == "bird" || data.trueform == "鳥" || data.trueform == "とり" || data.trueform == "トリ" || data.trueform == "새") {
 		data.raceimg = "systems/gss/templates/img/bird.png";
 	}
+	/*
 	else if (data.trueform.toLowerCase() == "mouse" || data.trueform == "鼠" || data.trueform == "ねずみ" || data.trueform == "ネズミ" || data.trueform == "쥐") {
 		data.raceimg = "systems/gss/templates/img/mouse.png";
 	}
@@ -107,8 +108,9 @@ export class GssActor extends Actor {
 	else if (data.trueform.toLowerCase() == "visitor" || data.trueform == "まれびと" || data.trueform == "マレビト" || data.trueform == "이방인") {
 		data.raceimg = "systems/gss/templates/img/visitor.png";
 	}
+	*/
 	else {
-		data.raceimg = "systems/gss/templates/img/def.jpg";
+		data.raceimg = "systems/gss/templates/img/def.png";
 	}
   }
 

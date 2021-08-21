@@ -25,6 +25,7 @@ export class GssActorSheet extends ActorSheet {
 
     context.data = actorData.data;
     context.flags = actorData.flags;
+	context.config = CONFIG.GSS;
 
     if (actorData.type == 'character') {
       this._prepareItems(context);
@@ -103,7 +104,7 @@ export class GssActorSheet extends ActorSheet {
 
     html.find('.rollable').click(this._onRoll.bind(this));
 
-    if (this.actor.owner) {
+    if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
       html.find('li.item').each((i, li) => {
         if (li.classList.contains("inventory-header")) return;

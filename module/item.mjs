@@ -38,8 +38,7 @@ export class GssItem extends Item {
 			ChatMessage.create({
 			speaker: speaker,
 			rollMode: rollMode,
-			flavor: label,
-			content: item.data.description ?? ''
+			content: label + item.data.description ?? ''
 			});
 		}
 		else if (dataset.rollType == 'addi') {
@@ -47,8 +46,7 @@ export class GssItem extends Item {
 			ChatMessage.create({
 			speaker: speaker,
 			rollMode: rollMode,
-			flavor: labeladdi,
-			content: item.data.addi.description ?? ''
+			content: labeladdi + item.data.addi.description ?? ''
 			});
 		}
 		else if (dataset.rollType == 'weak') {
@@ -56,8 +54,7 @@ export class GssItem extends Item {
 			ChatMessage.create({
 			speaker: speaker,
 			rollMode: rollMode,
-			flavor: labelweak,
-			content: item.data.weak.description ?? ''
+			content: labelweak + item.data.weak.description ?? ''
 			});
 		}
     }

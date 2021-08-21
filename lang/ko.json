@@ -38,18 +38,21 @@
 "GSS.Town": "마을",
 
 "GSS.New": "새",
-"GSS.To": "정도",
 
 "GSS.Emotion": "감정",
 "GSS.Like": "호의",
+"GSS.Affect": "애정",
 "GSS.Affection": "애정",
+"GSS.Protect": "보호",
 "GSS.Protection": "보호",
 "GSS.Trust": "신뢰",
 "GSS.Family": "가족",
+"GSS.Admire": "동경",
 "GSS.Admiration": "동경",
 "GSS.Rivalry": "대항",
 "GSS.Respect": "존경",
 "GSS.Love": "사랑",
+"GSS.Accept": "수용",
 "GSS.Acceptance": "수용",
 
 "GSS.LikeDescription": "정도 2까지만 가능",
@@ -61,5 +64,13 @@
 "GSS.False": "끄기",
 
 "GSS.CharaIsDreamed": "캐릭터를 드림캐처에 표시",
-"GSS.DreamIsVisable": "시트에 현재 꿈을 표시"
+"GSS.DreamIsVisable": "시트에 현재 꿈을 표시",
+"GSS.OriginalConnection": "인연을 한 줄로 표시",
+
+"GSS.CharaIsDreamedDescription": "캐릭터가 드림캐처에 표시되어 꿈을 받을 수 있게 됩니다.",
+"GSS.DreamIsVisableDescription": "현재 캐릭터가 가지고 있는 꿈 수치를 끄고 킵니다. 남들이 내 롤플레잉을 어떻게 평가할 지 두려울 때 유용합니다. 시스템 설정의 ＂전체 꿈 숨기기＂ 가 이 설정을 덮어씁니다.",
+"GSS.DreamIsVisableDescription": "인연 목록을 저녁노을 어스름의 공식 시트처럼 한 줄 양방향으로 표시합니다.",
+
+"GSS.Setting.Hidedreams": "전체 꿈 숨기기",
+"GSS.Setting.HidedreamsHint": "모든 시트에서 현재 꿈 수치를 숨깁니다. 각 시트의 ＂시트에 현재 꿈을 표시＂설정을 덮어씁니다."
 }

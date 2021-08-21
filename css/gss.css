@@ -5,20 +5,20 @@
     font-style: normal;
 }
 @font-face {
-font-family: 'UhBeeSeulvely';
-src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff') format('woff');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
     font-family: 'ROEHOE-CHAN';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'mini-wakuwaku';
-    src:url('mini-wakuwaku.ttf.woff') format('woff');
+    font-family: 'Goodluck';
+    src:url('Goodluck.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nikumaru';
+    src:url('nikumaru.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,10 +28,10 @@ font-style: normal;
 .gss,
 div.poweruse-header,
 div.poweruse-label {
-	font-family: 'Katuri', 'mini-wakuwaku';
+	font-family: 'nikumaru', 'Goodluck', 'Katuri';
 }
 .gss .strong {
-	font-family: 'ROEHOE-CHAN', 'mini-wakuwaku';
+	font-family: 'ROEHOE-CHAN', 'nikumaru', 'Goodluck';
 	font-weight: 600;
 }
 .gss h1, .gss h2, .gss h3, .gss h4 {
@@ -47,7 +47,6 @@ div.poweruse-label {
 	box-sizing: border-box;
 	margin:5px;
 	align-items:center;
-	/* background: #aaaaaa44; */
 }
 .gss input {
 	padding: 0px 5px;
@@ -174,16 +173,17 @@ div.poweruse-label {
 }
 .gss .information .age,
 .gss .information .gender {
+	justify-content: space-between;
 }
 .gss .information input {
 	width: 60%;
 }
 .gss div.cost {
-	width: 30%;
+	width: 35%;
 	line-height: 32px;
 }
 .gss div.attributes {
-	width: 70%;
+	width: 65%;
 	text-align: center;
 }
 .gss .resource {
@@ -194,6 +194,7 @@ div.poweruse-label {
 }
 .gss .resource .cost input {
 	font-size: 24px;
+    width: 50%;
 	height: 100%;
 	text-align:center;
 }
@@ -249,7 +250,7 @@ span.plus {
 }
 
 .gss .item-header {
-	min-height: 29px;
+    min-height: 37px;
 	background-color: #ffffff77;
 }
 .gss .item-name {
@@ -333,6 +334,7 @@ div.poweruse-header,
 div.poweruse-label {
 	text-align: center;
 	align-items: flex-start;
+    justify-content: space-between;
 }
 .poweruse-header {
 	height: 32px;
@@ -395,6 +397,9 @@ div.poweruse-label {
 }
 .con-item.con-name {
 	font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .cons-label {
@@ -405,6 +410,7 @@ div.poweruse-label {
 }
 .gss table .connections-divider td {
 	padding: 1px;
+    height: 2px;
 	background: linear-gradient(to right, transparent, #777777, transparent);
 }
 
@@ -412,7 +418,7 @@ progress.convalue {
 	box-sizing: border-box;
 	width: 100%;
 	background: linear-gradient(to right, #77777722 20%, #aaaaaa22 20% 40%, #77777722 40% 60%, #aaaaaa22 60% 80%, #77777722 80%);
-	color: #0000ff44;
+	color: #00FFFF77;
 	border-radius: 7px;
 }
 progress.convalue::-webkit-progress-bar {
@@ -422,15 +428,24 @@ progress.convalue::-webkit-progress-bar {
 	border-radius: 7px;
 }
 progress.convalue::-webkit-progress-value {
-	background-color: #0000ff44;
+	background-color: #00FFFF77;
 	border-radius: 7px;
 }
 progress.convalue::-moz-progress-bar {
 	box-sizing: border-box;
 	width: 100%;
 	background: linear-gradient(to right, #77777722 20%, #aaaaaa22 20% 40%, #77777722 40% 60%, #aaaaaa22 60% 80%, #77777722 80%);
-	color: #0000ff44;
+	color: #00FFFF77;
 	border-radius: 7px;
+}
+progress.convalue.rev {
+	transform:rotate(0deg);
+	-moz-transform: scaleX(-1); 
+	-o-transform: scaleX(-1); 
+	-webkit-transform: scaleX(-1); 
+	transform: scaleX(-1);   
+	filter: FlipH;
+	-ms-filter: "FlipH";
 }
 
 .con-sidebar {
@@ -443,7 +458,7 @@ progress.convalue::-moz-progress-bar {
 .con-sidebar .wonders,
 .con-sidebar .feeling,
 .con-sidebar .dreams {
-	width: 32%;
+    width: calc(33% - 10px);
 }
 .con-sidebar label {
 	width: 100%;
@@ -470,21 +485,23 @@ progress.convalue::-moz-progress-bar {
 }
 .con-sidebar .dreams input {
 	height: 58px;
-	font-size: 36px;
+    font-size: 28px;
 }
 .emo-list {
 	flex-wrap: wrap;
 }
 .emo-list .emo {
-	width: 28%;
+    width: calc(33% - 6px);
+    margin: 3px;
 	font-size: 14px;
 	text-align: center;
 	background: #77777722;
 }
 .emo-list .emo.emo-head {
-	width: 62%;
+	width: calc(66% - 6px);
 }
-.emo-list .emo .fa-info-circle {
+.emo-list .emo .fa-info-circle,
+.con-options .con-option .fa-info-circle {
 	width: 0px;
 	height: 0px;
 	font-size: 10px;
@@ -497,7 +514,6 @@ progress.convalue::-moz-progress-bar {
 	font-size: 14px;
 	text-align: center;
 	background: #77777722;
-	height: 20px;
 }
 .con-options .con-option label {
 	text-align: center;
@@ -506,6 +522,25 @@ progress.convalue::-moz-progress-bar {
 .con-options .con-option input[type="checkbox"] {
 	height: 14px;
 	float: left;
+}
+.con-options .con-option.locked {
+	background: #77777777;
+	opacity: 0.5;
+}
+
+.con-sidebar.downed,
+.connections-list.full {
+	width: calc(100% - 10px);
+	position: initial;
+}
+.con-sidebar.downed .sidebar-resources {
+	width: calc(30% - 10px);
+}
+.con-sidebar.downed .emo-list {
+	width: calc(30% - 10px);
+}
+.con-sidebar.downed .con-options {
+	width: calc(40% - 10px);
 }
 
 .needs {
@@ -530,58 +565,65 @@ progress.convalue::-moz-progress-bar {
 .gss .dialog-content {
 	overflow: hidden;
 }
-.dreamer {
+.gss div.dreamer {
 	flex-wrap: nowrap;
 	justify-content: flex-start;
+	height: 100%;
+	margin: 0px;
 }
-.dreamline {
+.gss div.dreamer .dreamline {
+	flex-wrap: wrap;
 	background-color: #ffffff77;
 	border-radius: 10px;
-    overflow: hidden;
 	width: calc(20% - 10px);
 	padding: 5px;
+	height: calc(100% - 10px);
 }
-.dreamline img {
+.gss div.dreamer .dreamline button {
+	height: 100%;
+	width: 100%;
+    background: none!important;
+	border: none;
+	margin: 0px;
+    padding: 0px;
+    line-height: 100%;
+}
+.gss div.dreamer .dreamline button img {
 	border: none;
 	border-radius: 10px;
+	width: 100%;
+	height: auto;
 }
-.dreamline h3 {
+.gss div.dreamer .dreamline h3 {
 	font-size: 14px;
     height: 0px;
     position: relative;
     top: -16px;
-	overflow: visible;
     text-shadow: 0px 0px 4px #000;
     color: white;
 }
-.dreamline button {
-	height: 88px;
-	padding: 0px;
-	background: none;
-	border: none;
-	line-height: 0px;
-}
-.dreamline button i {
-    height: 0px;
-    width: 0px;
-    font-size: 90px;
-	font-weight: 600;
-    opacity: 0.3;
+.gss div.dreamer .dreamline button i {
+    height: 100%;
+    width: 100%;
+	margin: 0px;
+    text-align: center;
     position: relative;
-    right: 38px;
-    top: -88px;
+    bottom: calc(100% - 10px);
+    font-size: 90px;
+    opacity: 0.3;
     color: white;
+    z-index: 10;
     text-shadow: 0px 0px 10px #00000077;
 }
-.dreamline button:hover {
+.gss div.dreamer .dreamline button:hover {
 	box-shadow: none;
 	border: none;
 	outline: none;
 }
-.dreamline button:hover img {
+.gss div.dreamer .dreamline button:hover img {
 	opacity: 0.3;
 }
-.dreamline button:hover i {
+.gss div.dreamer .dreamline button:hover i {
 	opacity: 0.7;
 }
 

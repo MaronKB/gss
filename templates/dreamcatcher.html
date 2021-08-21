@@ -2,7 +2,7 @@
     <div class="dreamer flex">
     {{#each actors as |actor id|}}
         <div class="dreamline" data-id="{{actor.id}}">
-            <button type="button" class="icon-button add-dream" data-add="1"><img src="{{image}}"><i class="fas fa-plus"></i></button><h3>{{name}}</h3>
+            <button type="button" class="icon-button add-dream" data-add="1"><div class="dream-img-container"><img src="{{image}}"></div><i class="fas fa-plus"></i></button><h3>{{name}}</h3>
         </div>
     {{/each}}
     </div>

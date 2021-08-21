@@ -1,0 +1,76 @@
+{
+"GSS.Name": "名前",
+"GSS.Trueform": "正体",
+"GSS.Player": "プレイヤー",
+"GSS.Age": "年齢",
+"GSS.Gender": "性別",
+
+"GSS.Wonder": "ふしぎ",
+"GSS.Feelings": "想い",
+"GSS.Dream": "夢",
+
+"GSS.Henge": "へんげ",
+"GSS.Animal": "けもの",
+"GSS.Adult": "おとな",
+"GSS.Child": "こども",
+
+"GSS.Description": "説明",
+"GSS.Biography": "紹介",
+"GSS.Memo": "メモ",
+"GSS.Givedream": "夢のやりとり",
+
+"GSS.Connection": "つながり",
+"GSS.Connections": "つながり",
+
+"GSS.Power": "能力",
+"GSS.Powers": "基本能力",
+"GSS.Additional": "追加能力",
+"GSS.Additionals": "追加能力",
+"GSS.Weakness": "弱点",
+"GSS.Addiweaks": "追加能力＆弱点",
+"GSS.Cost": "コスト",
+
+"GSS.You": "あなた",
+"GSS.Opponent": "あいて",
+"GSS.Contents": "内容",
+"GSS.Intensity": "強さ",
+"GSS.Add": "追加",
+"GSS.Town": "町",
+
+"GSS.New": "新しい",
+
+"GSS.Emotion": "感情",
+"GSS.Like": "好意",
+"GSS.Affect": "愛情",
+"GSS.Affection": "愛情",
+"GSS.Protect": "保護",
+"GSS.Protection": "保護",
+"GSS.Trust": "信頼",
+"GSS.Family": "家族",
+"GSS.Admire": "憧れ",
+"GSS.Admiration": "憧れ",
+"GSS.Rivalry": "対抗",
+"GSS.Respect": "尊敬",
+"GSS.Love": "恋",
+"GSS.Accept": "受容",
+"GSS.Acceptance": "受容",
+
+"GSS.LikeDescription": "強さ2まで",
+"GSS.LoveDescription": "強さ2から",
+"GSS.AcceptanceDescription": "町・土地神専用",
+
+"GSS.Dreamcatcher": "ドリームキャッチャーシステム",
+"GSS.True": "オン",
+"GSS.False": "オフ",
+
+"GSS.CharaIsDreamed": "キャラクターをドリームキャッチャーに表示する",
+"GSS.DreamIsVisable": "キャラクターシートに夢を表示する",
+"GSS.OriginalConnection": "つながりを一列に表示する",
+
+"GSS.CharaIsDreamedDescription": "キャラクターがドリームキャッチャーに表示されて夢を受けることができるようになります。",
+"GSS.DreamIsVisableDescription": "現在のキャラクターが持っている夢の表示をオンオフします。他の人が自分のロールプレイングをどのように評価するか怖いときに便利です。システム設定の「夢を全部隠す」はこの設定を上書きします。",
+"GSS.DreamIsVisableDescription": "つながりのリストをゆうやけこやけの公式シートのように表示します。",
+
+"GSS.Setting.Hidedreams": "夢を全部隠す",
+"GSS.Setting.HidedreamsHint": "すべてのシートから夢の表示を隠します。各シートの「キャラクターシートに夢を表示」の設定を上書きします。"
+}

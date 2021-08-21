@@ -55,12 +55,6 @@ export class DreamCatcher extends Dialog {
 
 
     async _onAddDream(html, event) {
-		if (game.modules.get("confetti") != undefined && window.confetti) {
-           const strength = window.confetti.confettiStrength.med;
-           const shootConfettiProps = window.confetti.getShootConfettiProps(strength);
-            window.confetti.shootConfetti(shootConfettiProps);
-        }
-	    
         var target = $(event.currentTarget);
         var actor = game.actors.get(target.parent()[0].dataset.id);
 

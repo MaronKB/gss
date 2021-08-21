@@ -16,6 +16,7 @@
 	  "player": "",
 	  "isdreamed": true,
 	  "visabledream": true,
+	  "originalconnection": false,
 	  "resources": {
 		"wonder": {
 		  "value": 1,

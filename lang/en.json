@@ -1,22 +1,76 @@
 {
-  "GSS.AbilityStr": "Strength",
-  "GSS.AbilityCon": "Constitution",
-  "GSS.AbilityDex": "Dexterity",
-  "GSS.AbilityInt": "Intelligence",
-  "GSS.AbilityWis": "Wisdom",
-  "GSS.AbilityCha": "Charisma",
+"GSS.Name": "Name",
+"GSS.Trueform": "True Form",
+"GSS.Player": "Player",
+"GSS.Age": "Age",
+"GSS.Gender": "Gender",
 
-  "GSS.AbilityStrAbbr": "str",
-  "GSS.AbilityConAbbr": "con",
-  "GSS.AbilityDexAbbr": "dex",
-  "GSS.AbilityIntAbbr": "int",
-  "GSS.AbilityWisAbbr": "wis",
-  "GSS.AbilityChaAbbr": "cha",
+"GSS.Wonder": "Wonder",
+"GSS.Feelings": "Feelings",
+"GSS.Dream": "Dreams",
 
-  "GSS.EffectCreate": "Create Effect",
-  "GSS.EffectToggle": "Toggle Effect",
-  "GSS.EffectEdit": "Edit Effect",
-  "GSS.EffectDelete": "Delete Effect",
+"GSS.Henge": "Henge",
+"GSS.Animal": "Animal",
+"GSS.Adult": "Adult",
+"GSS.Child": "Child",
 
-  "GSS.Add": "Add"
+"GSS.Description": "Description",
+"GSS.Biography": "Biography",
+"GSS.Memo": "Memo",
+"GSS.Givedream": "Give Dream",
+
+"GSS.Connection": "Connection",
+"GSS.Connections": "Connections",
+
+"GSS.Power": "Power",
+"GSS.Powers": "Powers",
+"GSS.Additional": "Additional Power",
+"GSS.Additionals": "Additional Powers",
+"GSS.Weakness": "Weakness",
+"GSS.Addiweaks": "Additional Powers & Weaknesses",
+"GSS.Cost": "Cost",
+
+"GSS.You": "You",
+"GSS.Opponent": "Opponent",
+"GSS.Contents": "Contents",
+"GSS.Intensity": "Strength",
+"GSS.Add": "Add",
+"GSS.Town": "Town",
+
+"GSS.New": "New",
+
+"GSS.Emotion": "Emotion",
+"GSS.Like": "Like",
+"GSS.Affect": "Affect",
+"GSS.Affection": "Affection",
+"GSS.Protect": "Protect",
+"GSS.Protection": "Protection",
+"GSS.Trust": "Trust",
+"GSS.Family": "Family",
+"GSS.Admire": "Admire",
+"GSS.Admiration": "Admiration",
+"GSS.Rivalry": "Rivalry",
+"GSS.Respect": "Respect",
+"GSS.Love": "Love",
+"GSS.Accept": "Accept",
+"GSS.Acceptance": "Acceptance",
+
+"GSS.LikeDescription": "The strength of this kind of connection can only go as high as 2.",
+"GSS.LoveDescription": "This kind of connection must be of strength 2 or higher.",
+"GSS.AcceptanceDescription": "This is only for the town and local gods.",
+
+"GSS.Dreamcatcher": "Dreamcatcher System",
+"GSS.True": "On",
+"GSS.False": "Off",
+
+"GSS.CharaIsDreamed": "Display this character on the Dreamcatcher",
+"GSS.DreamIsVisable": "Show current dreams on this sheet",
+"GSS.OriginalConnection": "Display each connection on each line",
+
+"GSS.CharaIsDreamedDescription": "Character will appear on the Dreamcatcher and be able to receive the dreams.",
+"GSS.DreamIsVisableDescription": "Turns on/off the dreams value the character currently has. This is useful when you afraid of how others will rate your role-playing. ＂Hide Entire Dreams＂ in System Settings overwrites this.",
+"GSS.DreamIsVisableDescription": "Display the connection list in one line bidirectional like an official Golden Sky Stories sheet.",
+
+"GSS.Setting.Hidedreams": "Hide Entire Dreams",
+"GSS.Setting.HidedreamsHint": "Hides the current dreams on every sheets. Overrides ＂Show current dreams on this sheet＂ setting of each sheets."
 }

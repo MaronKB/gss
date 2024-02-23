@@ -87,7 +87,7 @@ Hooks.on("getSceneControlButtons", function(controls) {
 });
 
 function dreamDialog() {
-    var actors = game.data.actors.filter(element => element.type == "character" && element.data.isdreamed == true);
+    var actors = game.actors.filter(element => element.type == "character" && element.system.isdreamed == true);
 
     let dialog = new DreamCatcher(actors);
     dialog.render(true);

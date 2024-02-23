@@ -32,8 +32,8 @@ export class DreamCatcher extends Dialog {
 
         let actors = [];
         for (let a of this.actor) {
-            var actor = game.actors.get(a._id);
-            var dream = a.data.resources.dream.value;
+            const actor = game.actors.get(a._id);
+            const dream = a.system.resources.dream.value;
 
             actors.push({id: a._id, image: actor.img, name: a.name, dream: dream});
         }

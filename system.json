@@ -2,10 +2,18 @@
   "name": "gss",
   "title": "Golden Sky Stories",
   "description": "夕焼け小焼け / Golden Sky Stories / 저녁노을 어스름",
-  "version": "0.1.0",
-  "minimumCoreVersion": "0.8.0",
-  "compatibleCoreVersion": "0.8.8",
-  "author": "MRKB",
+  "version": "0.1.2",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11.315"
+  },
+  "authors": [
+    {
+      "name": "MRKB",
+      "discord": "mrkb",
+      "flags": {}
+    }
+  ],
   "esmodules": ["module/gss.mjs"],
   "styles": ["css/gss.css"],
   "scripts": [],
